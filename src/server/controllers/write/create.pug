@@ -1,0 +1,22 @@
+extends ../../../client/layout
+
+block content
+  h1= title
+  form(method='POST' action='')
+    label(for='name') Name:
+      input(type='text' placeholder='Name' name='name' value=(undefined===data ? '' : data.name))
+    label(for='description') Description:
+      input(type='text' placeholder='Description' name='description' value=(undefined===data ? '' : data.description))
+    label(for='price') Price:
+      input(type='number' step='any' placeholder='Price' name='price' value=(undefined===data ? '' : data.price))
+    label(for='quantity') Quantity:
+      input(type='number' placeholder='Quantity' name='quantity' value=(undefined===data ? '' : data.quantity))
+    label(for='reorderLevel') Reorder Level:
+      input(type='number' placeholder='Reorder Level' name='reorderLevel' value=(undefined===data ? '' : data.reorderLevel))
+    label(for='reorderQuantity') Reorder Quantity:
+      input(type='number' placeholder='Reorder Quantity' name='reorderQuantity' value=(undefined===data ? '' : data.reorderQuantity))
+    button(type='submit') Submit
+  if errors
+    ul
+      for error in errors
+        li!= error.msg

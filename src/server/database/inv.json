@@ -1,0 +1,49 @@
+{
+  "inventory": [
+    {
+      "id": "f143f8ec-7cdf-494e-a6d9-090165f121ec",
+      "name": "banana",
+      "description": "5 lb crate",
+      "price": "3.75",
+      "quantity": "10",
+      "inventoryValue": 37.5,
+      "reorderLevel": "6",
+      "reorderQuantity": "15",
+      "deleted": false,
+      "createdAt": "5/13/2022, 12:51:59 AM",
+      "updatedAt": "5/13/2022, 8:20:31 PM",
+      "deletionComments": "",
+      "deletedAt": ""
+    },
+    {
+      "id": "5af02b5f-786b-4ee5-bbbb-44709877e128",
+      "name": "apple",
+      "description": "10 lb crate",
+      "price": "6.85",
+      "quantity": "1",
+      "inventoryValue": 6.85,
+      "reorderLevel": "1",
+      "reorderQuantity": "34",
+      "deleted": true,
+      "createdAt": "5/13/2022, 12:53:04 AM",
+      "updatedAt": "5/13/2022, 6:51:20 PM",
+      "deletionComments": "discontinued",
+      "deletedAt": "5/13/2022, 6:51:42 PM"
+    },
+    {
+      "id": "326c066c-4c4a-4e2f-ac1c-3e5352e0cbc7",
+      "name": "oat groats",
+      "description": "50 lb bucket",
+      "price": "45.73",
+      "quantity": "13",
+      "inventoryValue": 594.49,
+      "reorderLevel": "3",
+      "reorderQuantity": "15",
+      "deleted": false,
+      "createdAt": "5/13/2022, 7:24:11 PM",
+      "updatedAt": "5/13/2022, 7:24:11 PM",
+      "deletionComments": "",
+      "deletedAt": ""
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+a {
+  color: blue;
+}
+ a:link {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration:underline;
+}
+td, th {
+  border: 1px solid #999;
+  padding: 20px;
+}
+th {
+  background: white;
+  border-radius: 0;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}

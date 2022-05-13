@@ -1,0 +1,18 @@
+extends ../../../client/layout
+
+block content
+  h1= title
+  table
+    thead
+      tr
+        for item,key in data[0]
+            th #{key}
+    for list in data
+      if list.deleted
+        tr
+          for item,key in list
+            if key=="id"
+              td
+                a(href=`/${item}`) #{item}
+            else
+              td #{item}

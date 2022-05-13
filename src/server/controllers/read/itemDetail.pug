@@ -1,0 +1,36 @@
+extends ../../../client/layout
+
+block content
+  h1= title
+  table
+    thead
+      tr
+        for item,key in data
+          if !data.deleted
+            if key!="deleted" && key!="deletionComments" && key!="deletedAt"
+              th #{key}
+          else
+            th #{key}
+    tr
+      for item,key in data
+        if !data.deleted
+          if key!="deleted" && key!="deletionComments" && key!="deletedAt"
+            if key=="id"
+              td
+                a(href=`/${item}`) #{item}
+            else
+              td #{item}
+        else
+          if key=="id"
+            td
+              a(href=`/${item}`) #{item}
+          else
+            td #{item}
+  if !data.deleted
+    p
+      a(href='/update/'+data.id) update
+    p
+      a(href='/delete/'+data.id) delete
+  else
+    p
+      a(href='/undelete/'+data.id) unDelete

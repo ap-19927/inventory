@@ -26,5 +26,7 @@ const item = (req) => {
 };
 exports.update_post = [
   ...util.validator,
-  (req,res) => { util.processRequest(req,res,item(req),title,service.updateData,req.params.id) }
+  //  util.updateValidator,
+  (req,res) => {
+    util.processRequest(req,res,'update',title,service.updateData,item(req),req.params.id) }
 ];

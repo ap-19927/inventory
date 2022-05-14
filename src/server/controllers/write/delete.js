@@ -10,7 +10,7 @@ exports.delete = (req, res) => {
 };
 
 // Create object with escaped and trimmed data.
-const deletedItem = (req) => {
+const item = (req) => {
   return {
     'id': req.params.id,
     'name': req.body.name,
@@ -28,7 +28,7 @@ const deletedItem = (req) => {
 };
 exports.delete_post = [
   util.deleteValidator,
-  (req,res) => { util.processRequest(req,res,deletedItem(req),title,service.deleteData,'') }
+  (req,res) => { util.processRequest(req,res,'delete',title,service.deleteData,item(req),'') }
 ];
 
 /****

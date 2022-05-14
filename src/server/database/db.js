@@ -1,9 +1,8 @@
 const inv = require("./inv.json");
 const fs = require("fs");
 
-
 const getData = (id) => {
-  const index = inventory().findIndex((ele) => {if(ele.id===id) return true});
+  const index = inventory().findIndex((ele) => ele.id===id);
   return inventory()[index];
 };
 
@@ -24,8 +23,7 @@ const inventory = () => {
 create
 */
 const createData = (newItem) => {
-  const isAlreadyAdded =
-    inventory().findIndex((ele) => {if(ele.name===newItem.name) return true}) > -1;
+  const isAlreadyAdded = inventory().findIndex((ele) => !ele.deleted && ele.name===newItem.name) > -1;
   if (isAlreadyAdded) {
     throw new Error(`Item with the name ${newItem.name} already exists`)
   }
@@ -41,7 +39,11 @@ const createData = (newItem) => {
 update
 */
 const updateData = (updatedItem) => {
-  const index = inventory().findIndex((item) => item.name === updatedItem.name);
+  const index = inventory().findIndex((ele) => ele.id===updatedItem.id);
+  const isAlreadyNamed = inventory().findIndex((ele) => !ele.deleted && ele.name===updatedItem.name && ele.id!=updatedItem.id) > -1;
+  if (isAlreadyNamed) {
+    throw new Error(`Item with the name ${updatedItem.name} already exists`)
+  }
   try {
     inventory()[index] = {...updatedItem};
     saveToDatabase(inv);

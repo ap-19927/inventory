@@ -1,21 +1,6 @@
 {
   "inventory": [
     {
-      "id": "f143f8ec-7cdf-494e-a6d9-090165f121ec",
-      "name": "banana",
-      "description": "5 lb crate",
-      "price": "3.75",
-      "quantity": "10",
-      "inventoryValue": 37.5,
-      "reorderLevel": "6",
-      "reorderQuantity": "15",
-      "deleted": false,
-      "createdAt": "5/13/2022, 12:51:59 AM",
-      "updatedAt": "5/13/2022, 8:20:31 PM",
-      "deletionComments": "",
-      "deletedAt": ""
-    },
-    {
       "id": "5af02b5f-786b-4ee5-bbbb-44709877e128",
       "name": "apple",
       "description": "10 lb crate",
@@ -24,11 +9,11 @@
       "inventoryValue": 6.85,
       "reorderLevel": "1",
       "reorderQuantity": "34",
-      "deleted": true,
+      "deleted": false,
       "createdAt": "5/13/2022, 12:53:04 AM",
-      "updatedAt": "5/13/2022, 6:51:20 PM",
-      "deletionComments": "discontinued",
-      "deletedAt": "5/13/2022, 6:51:42 PM"
+      "updatedAt": "5/14/2022, 12:04:09 AM",
+      "deletionComments": "",
+      "deletedAt": ""
     },
     {
       "id": "326c066c-4c4a-4e2f-ac1c-3e5352e0cbc7",
@@ -44,6 +29,21 @@
       "updatedAt": "5/13/2022, 7:24:11 PM",
       "deletionComments": "",
       "deletedAt": ""
+    },
+    {
+      "id": "11d416fc-4ecf-4aae-b95b-49879f14ee49",
+      "name": "banana",
+      "description": "5 lb crate",
+      "price": "3.85",
+      "quantity": "12",
+      "inventoryValue": 46.2,
+      "reorderLevel": "3",
+      "reorderQuantity": "15",
+      "deleted": true,
+      "createdAt": "5/13/2022, 11:23:57 PM",
+      "updatedAt": "5/14/2022, 12:26:13 AM",
+      "deletionComments": "discontinued",
+      "deletedAt": "5/14/2022, 12:26:29 AM"
     }
   ]
 }

@@ -24,5 +24,5 @@ const item = (req) => {
 };
 exports.create_post = [
   ...util.validator,
-  (req,res) => { util.processRequest(req,res,item(req),title,service.createData,'') }
+  (req,res) => { util.processRequest(req,res,'create',title,service.createData,item(req),'') }
 ];

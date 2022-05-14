@@ -32,3 +32,9 @@ Once you have created your account, link your GitHub challenge link to your Ripl
 
 *Submit your github link for the code in your application
 *Submit your Replit link for deploying in your application
+
+
+
+
+
+The list is comprised of the nondeleted items in `inv.json`, which resides in the database layer. This is returned by the `inventory` method in the service layer, which in turn is part of the object in the response of the controller, obtained by the router, along with the view `inventoryList`.

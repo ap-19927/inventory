@@ -31,7 +31,7 @@ const createData = (newItem) => {
     inventory().push(newItem);
     saveToDatabase(inv);
   } catch (e) {
-    throw { status: 500, message: e?.message || e };
+    throw { status: 500, message: e };
   }
 };
 

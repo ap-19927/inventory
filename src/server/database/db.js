@@ -48,7 +48,7 @@ const updateData = (updatedItem) => {
     inventory()[index] = {...updatedItem};
     saveToDatabase(inv);
   } catch (e) {
-    throw { status: 500, message: e?.message || e };
+    throw { status: 500, message: e };
   }
 };
 

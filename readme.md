@@ -2,6 +2,9 @@
 
 A simple CRUD app for an inventory list. Uses express, body-parser, express-validator, uuid and pug. Part of an application for a Fall 2022 Shopify Developer Internship.
 
+## replit
+https://replit.com/@ap19927/inventory#.replit
+
 ## run from scratch
 git clone https://github.com/ap-19927/inventory.git \
 cd inventory\
